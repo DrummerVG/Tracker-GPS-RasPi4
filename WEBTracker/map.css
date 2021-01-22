@@ -1,0 +1,39 @@
+body, html {
+  height: 100%;
+}
+.Display {
+  /* The image used */
+  background-image: url('https://www.xtrafondos.com/wallpapers/manana-en-la-playa-arte-minimalista-6858.jpg');
+  filter: blur(0.5px); /*Provoca un desenfoque ala imagen del fondo*/
+  -webkit-filter: blur(0.5px); /*Desenfoque para chrome y safari*/
+  /* Full height-Altura*/
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center; /*(x%,y%)*/
+  background-repeat: no-repeat;/*repetir la imagen*/
+  background-size: cover;/*tamaño de la imagen respecto a la ventana*/
+}
+.Display-on {
+  /*background-color: rgb(255,255,255); */
+  background-color: rgba(0,0,0,0); /*(r,g,b,trasparencia 0 a 1, donde 0 es maxima y 1 minima)*/
+  color: rgb(255, 255, 255); /*color de la fuente*/
+  font-style: italic;
+  font-weight: bold; /*negrita*/
+  text-align: center;
+  border: 1px solid #f1f1f1;
+  position: absolute; /*referencia a la pagina del navegador*/
+  top: 50%;/*eje y*/
+  left: 50%;/*eje x*/
+  z-index: 2;
+  width: 100%;/*ancho*/
+  padding: 20px; /*relleno*/
+  transform: translate(-50%, -50%);
+}
+
+#map-canvas{
+    width:1024px;
+    height:500px;
+    border: 2px solid #a9a9a9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
